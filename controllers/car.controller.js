@@ -2,6 +2,7 @@ const carModel = require('../models/cars.model');
 const carController = {};
 
 carController.getCars = async (req, res) => {
+    document.innerHTML = "<strong>Importante</strong>"; 
     const cars = await carModel.find();
     res.json(cars);
 };
