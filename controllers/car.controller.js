@@ -2,7 +2,7 @@ const carModel = require('../models/cars.model');
 const carController = {};
 
 carController.getCars = async (req, res) => {
-    res.json('Despliegue automatizado desde DevOps.');
+    res.json('Despliegue automatizado desde DevOps...');
     const cars = await carModel.find();
     res.json(cars);
 };
