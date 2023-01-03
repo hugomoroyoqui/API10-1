@@ -22,5 +22,5 @@ app.use('/api/cars', require('./routes/cars.routes'));
 app.listen(app.get('port'), () => {
     console.log('Servidor inicializado en puerto: ' 
     + app.get('port') /*port*/);
-    res.json({ 'status': 'Auto'});
+    document.innerHTML = "<strong>Importante</strong>"; 
 });
